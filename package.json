@@ -4,17 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint **/*.{js,ts,tsx}",
+    "lint:fix": "prettier-eslint **/*.js --write",
+    "format": "prettier-eslint --write %INIT_CWD%/src/**/*.{js,jsx}"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MuhammedAO/reactjs-spinners.git"
   },
-  "keywords": ["react", "css", "spinners"],
+  "keywords": [
+    "react",
+    "css",
+    "spinners"
+  ],
   "author": "Muhammed Ogunsanya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MuhammedAO/reactjs-spinners/issues"
   },
-  "homepage": "https://github.com/MuhammedAO/reactjs-spinners#readme"
+  "homepage": "https://github.com/MuhammedAO/reactjs-spinners#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
